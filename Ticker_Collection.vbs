@@ -69,7 +69,11 @@ Year_end = Cells(i - 1, 6).Value
 
 Cells(j, 9).Value = Ticker_Name
 Cells(j, 10).Value = Year_end - Year_start
-Cells(j, 11).Value = (Year_end - Year_start) / Year_start
+If Year_start = 0 Then
+    Cells(j,11).Value = Year_end
+Else
+    Cells(j, 11).Value = (Year_end - Year_start) / Year_start
+End If
     Cells(j, 11).NumberFormat = "0.00%"
 Cells(j, 12).Value = Stock_Vol
 
