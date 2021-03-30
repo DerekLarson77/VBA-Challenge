@@ -3,14 +3,14 @@ Sub AllSheets()
 
 Application.ScreenUpdating = False
 
-Sheets("2014").Activate
-Call Check_Tickers
+Dim ws As Worksheet
 
-Sheets("2015").Activate
-Call Check_Tickers
+For Each ws In Worksheets
 
-Sheets("2016").Activate
-Call Check_Tickers
+    Call Check_Tickers(ws)
+    Call Greatest_Stock(ws)
+
+Next ws
 
 Application.ScreenUpdating = True
 End Sub
