@@ -1,4 +1,4 @@
-# VBA-Challenge
+# VBA-Yearly-Stocks
 
 	The goal of this challenge was to extract the first day of the year and last day of the year for each ticker(stock) to calculate the growth and percent change.
 The stock volume from each day was also added up to get the total stock per year for each ticker.  This process was then completed for 3 seperate years.
